@@ -15,4 +15,6 @@ php artisan migrate --path=/database/migrations/2024_07_06_230414_create_gastos_
 php artisan migrate --path=/database/migrations/2024_07_06_230414_create_ingresos_table.php
 php artisan db:seed --class=PuestosTableSeeder
 
-Nota: en caso de que se creen solo 12 tablas de 13, peguen de nuevo las anteriores lineas de codigo y dar enter en la ultima linea, la migracion que no se crea en la de 'ingresos_table.php'
+Nota #1: Dirigirse literalmente al archivo README.md del repositorio y poner en vision 'Code' para que la creacion de las migraciones y data este de manera correcta y funcione en la consola linea tras linea.
+
+Nota #2: en caso de que se creen solo 12 tablas de 13, peguen de nuevo las anteriores lineas de codigo y dar enter en la ultima linea, la migracion que no se crea en la de 'ingresos_table.php'
