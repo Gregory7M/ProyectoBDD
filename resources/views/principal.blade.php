@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administración de Mercado</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -16,7 +16,7 @@
             <nav id="dropdown-menu" class="dropdown-menu">
                 <ul>
                     <li>
-                        <a href="./gestionPrincipal.blade.php">Gestión de Espacios y Puestos de Venta</a>
+                        <a href="{{ url('/gestion-principal') }}">Gestión de Espacios y Puestos de Venta</a>
                         <ul class="submenu">
                             <li><a href="puesto.php">Ingreso de puestos</a></li>
                             <li><a href="comer.php">Ingreso de Comerciante</a></li>
@@ -24,7 +24,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="./inventarioPrincipal.blade.php">Inventario y Gestión de Productos</a>
+                        <a href="{{ url('/inventario-principal') }}">Inventario y Gestión de Productos</a>
                         <ul class="submenu">
                             <li><a href="productos.php">Ingreso de Productos</a></li>
                             <li><a href="in.php">Ingreso de Inventario</a></li>
@@ -32,7 +32,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="./transaccionesPrincipal.blade.php">Transacciones y Finanzas</a>
+                        <a href="{{ url('/transacciones-principal') }}">Transacciones y Finanzas</a>
                         <ul class="submenu">
                             <li><a href="pagos.php">Pagos</a></li>
                             <li><a href="gastos.php">Gastos</a></li>
@@ -40,7 +40,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="./mantenimientoPrincipal.blade.php">Mantenimiento</a>
+                        <a href="{{ url('/mantenimiento-principal') }}">Mantenimiento</a>
                         <ul class="submenu">
                             <li><a href="man.php">Mantenimiento de Puestos</a></li>
                             <li><a href="insp.php">Inspeccion Puestos</a></li>

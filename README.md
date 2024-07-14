@@ -13,5 +13,6 @@ php artisan migrate --path=/database/migrations/2024_07_06_230414_create_inspecc
 php artisan migrate --path=/database/migrations/2024_07_06_230415_create_tareas_mantenimiento_table.php
 php artisan migrate --path=/database/migrations/2024_07_06_230414_create_gastos_table.php
 php artisan migrate --path=/database/migrations/2024_07_06_230414_create_ingresos_table.php
+php artisan db:seed --class=PuestosTableSeeder
 
 Nota: en caso de que se creen solo 12 tablas de 13, peguen de nuevo las anteriores lineas de codigo y dar enter en la ultima linea, la migracion que no se crea en la de 'ingresos_table.php'

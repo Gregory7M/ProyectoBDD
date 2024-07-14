@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administración de Mercado</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -14,40 +14,7 @@
                 &#9776;
             </div>
             <nav id="dropdown-menu" class="dropdown-menu">
-                <ul>
-                    <li>
-                        <a href="#">Gestión de Espacios y Puestos de Venta</a>
-                        <ul class="submenu">
-                            <li><a href="puesto.php">Ingreso de puestos</a></li>
-                            <li><a href="comer.php">Ingreso de Comerciante</a></li>
-                            <li><a href="arre.php">Ingreso de Arrendamiento</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="./inventarioPrincipal.blade.php">Inventario y Gestión de Productos</a>
-                        <ul class="submenu">
-                            <li><a href="productos.php">Ingreso de Productos</a></li>
-                            <li><a href="in.php">Ingreso de Inventario</a></li>
-                            <li><a href="ventas.php">Ventas del dia</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="./transaccionesPrincipal.blade.php">Transacciones y Finanzas</a>
-                        <ul class="submenu">
-                            <li><a href="pagos.php">Pagos</a></li>
-                            <li><a href="gastos.php">Gastos</a></li>
-                            <li><a href="ingresos.php">Ingresos</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="./mantenimientoPrincipal.blade.php">Mantenimiento</a>
-                        <ul class="submenu">
-                            <li><a href="man.php">Mantenimiento de Puestos</a></li>
-                            <li><a href="insp.php">Inspeccion Puestos</a></li>
-                            <li><a href="tmante.php">Tarea de Mantenimiento</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <!-- Menu HTML aquí -->
             </nav>
         </header>
         <main>
@@ -67,41 +34,25 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Filas de la tabla, se llenarán dinámicamente -->
-                    <tr>
-                        <td colspan="9">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td colspan="9">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td colspan="9">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td colspan="9">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td colspan="9">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td colspan="9">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td colspan="9">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td colspan="9">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td colspan="9">&nbsp;</td>
-                    </tr>
+                    @foreach ($puestos as $puesto)
+                        <tr>
+                            <td>{{ $puesto->ID_Puesto }}</td>
+                            <td>{{ $puesto->Ubicacion }}</td>
+                            <td>{{ $puesto->Estado }}</td>
+                            <td>{{ $puesto->Precio_Alquiler }}</td>
+                            <td>{{ $puesto->Concesionario }}</td>
+                            <td>{{ $puesto->Contacto }}</td>
+                            <td>{{ $puesto->Productos }}</td>
+                            <td>{{ $puesto->Fecha_Ingreso }}</td>
+                            <td>{{ $puesto->Fecha_Salida }}</td>
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
             <div class="button-container">
                 <button class="btn eliminar">ELIMINAR PUESTO</button>
                 <button class="btn agregar">AGREGAR PUESTO</button>
                 <li><a href="./principal.blade.php"><button class="btn volver">VOLVER</button></a></li>
-                
             </div>
         </main>
     </div>
