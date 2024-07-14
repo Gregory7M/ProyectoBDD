@@ -20,6 +20,26 @@ class PuestosTableSeeder extends Seeder
             'Fecha_Salida' => null
         ]);
 
-        // Agregar más puestos de ejemplo según sea necesario
+        Puesto::create([
+            'Ubicacion' => 'B2',
+            'Estado' => 'Ocupado',
+            'Precio_Alquiler' => 200.00,
+            'Concesionario' => 'María Gómez',
+            'Contacto' => '555-5678',
+            'Productos' => 'Carnes y Pescados',
+            'Fecha_Ingreso' => '2024-06-15',
+            'Fecha_Salida' => '2024-12-15'
+        ]);
+
+        Puesto::create([
+            'Ubicacion' => 'D4',
+            'Estado' => 'Ocupado',
+            'Precio_Alquiler' => 250.00,
+            'Concesionario' => 'Ana López',
+            'Contacto' => '555-4321',
+            'Productos' => 'Electrónicos',
+            'Fecha_Ingreso' => '2024-05-10',
+            'Fecha_Salida' => '2024-11-10'
+        ]);
     }
 }
