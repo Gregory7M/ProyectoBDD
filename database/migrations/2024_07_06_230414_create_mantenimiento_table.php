@@ -14,7 +14,6 @@ class CreateMantenimientoTable extends Migration
             $table->text('Descripción');
             $table->string('Estado', 20);
             $table->foreignId('ID_Puesto')->constrained('puestos', 'ID_Puesto');
-            $table->timestamps();
         });
     }
 

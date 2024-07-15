@@ -10,58 +10,34 @@ class PuestosTableSeeder extends Seeder
     public function run()
     {
         Puesto::create([
-            'Ubicacion' => 'Zona A1',
-            'Estado' => 'disponible',
-            'Precio_Alquiler' => 100.00,
-            'Concesionario' => 'Juan Pérez',
-            'Contacto' => '555-1234',
-            'Productos' => 'Frutas y Verduras',
-            'Fecha_Ingreso' => '2024-07-01',
-            'Fecha_Salida' => null
+            'Ubicación' => 'Zona A1', 
+            'Estado' => 'disponible', 
+            'Tamaño' => '10x10', 
+            'Precio_Alquiler' => 100.00
         ]);
-
         Puesto::create([
-            'Ubicacion' => 'Zona A2',
-            'Estado' => 'ocupado',
-            'Precio_Alquiler' => 150.00,
-            'Concesionario' => 'María López',
-            'Contacto' => '555-5678',
-            'Productos' => 'Carnes y Pescados',
-            'Fecha_Ingreso' => '2024-07-10',
-            'Fecha_Salida' => null
+            'Ubicación' => 'Zona A2', 
+            'Estado' => 'disponible', 
+            'Tamaño' => '10x15', 
+            'Precio_Alquiler' => 150.00
         ]);
-
         Puesto::create([
-            'Ubicacion' => 'Zona B1',
-            'Estado' => 'disponible',
-            'Precio_Alquiler' => 120.00,
-            'Concesionario' => 'Carlos Sánchez',
-            'Contacto' => '555-9876',
-            'Productos' => 'Lácteos y Panadería',
-            'Fecha_Ingreso' => '2024-07-15',
-            'Fecha_Salida' => null
+            'Ubicación' => 'Zona B1', 
+            'Estado' => 'en mantenimiento', 
+            'Tamaño' => '12x12', 
+            'Precio_Alquiler' => 120.00
         ]);
-
         Puesto::create([
-            'Ubicacion' => 'Zona B2',
-            'Estado' => 'en mantenimiento',
-            'Precio_Alquiler' => 120.00,
-            'Concesionario' => 'Carlos Sánchez',
-            'Contacto' => '555-9876',
-            'Productos' => 'Lácteos y Panadería',
-            'Fecha_Ingreso' => '2024-07-15',
-            'Fecha_Salida' => null
+            'Ubicación' => 'Zona B2', 
+            'Estado' => 'disponible', 
+            'Tamaño' => '15x15', 
+            'Precio_Alquiler' => 200.00
         ]);
-
         Puesto::create([
-            'Ubicacion' => 'Zona C1',
-            'Estado' => 'ocupado',
-            'Precio_Alquiler' => 120.00,
-            'Concesionario' => 'Carlos Sánchez',
-            'Contacto' => '555-9876',
-            'Productos' => 'Lácteos y Panadería',
-            'Fecha_Ingreso' => '2024-07-15',
-            'Fecha_Salida' => null
+            'Ubicación' => 'Zona C1', 
+            'Estado' => 'ocupado', 
+            'Tamaño' => '8x8', 
+            'Precio_Alquiler' => 80.00
         ]);
     }
 }

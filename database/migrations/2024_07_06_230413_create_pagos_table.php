@@ -14,7 +14,6 @@ class CreatePagosTable extends Migration
             $table->date('Fecha');
             $table->decimal('Monto', 10, 2);
             $table->string('Método_Pago', 50);
-            $table->timestamps();
         });
     }
 

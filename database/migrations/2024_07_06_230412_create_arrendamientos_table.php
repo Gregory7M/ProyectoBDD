@@ -15,7 +15,6 @@ class CreateArrendamientosTable extends Migration
             $table->date('Fecha_Inicio');
             $table->date('Fecha_Fin');
             $table->decimal('Monto', 10, 2);
-            $table->timestamps();
             $table->engine = 'InnoDB';
         });
     }

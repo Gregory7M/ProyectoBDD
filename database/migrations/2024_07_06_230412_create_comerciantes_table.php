@@ -13,7 +13,6 @@ class CreateComerciantesTable extends Migration
             $table->string('Nombre', 100);
             $table->text('Datos_Contacto');
             $table->string('Tipo_Productos', 100);
-            $table->timestamps();
             $table->engine = 'InnoDB';
         });
     }

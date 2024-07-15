@@ -18,7 +18,6 @@ class CreatePuestosTable extends Migration
             $table->string('Productos', 255);
             $table->date('Fecha_Ingreso')->nullable();
             $table->date('Fecha_Salida')->nullable();
-            $table->timestamps();
         });
     }
 

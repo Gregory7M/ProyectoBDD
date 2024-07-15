@@ -16,7 +16,6 @@ class CreateProductosTable extends Migration
             $table->date('Fecha_Entrada');
             $table->date('Fecha_Caducidad');
             $table->foreignId('ID_Comerciante')->constrained('comerciantes', 'ID_Comerciante');
-            $table->timestamps();
         });
     }
 

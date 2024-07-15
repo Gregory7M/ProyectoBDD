@@ -14,7 +14,6 @@ class CreateVentasTable extends Migration
             $table->integer('Cantidad');
             $table->decimal('Monto_Total', 10, 2);
             $table->foreignId('ID_Comerciante')->constrained('comerciantes', 'ID_Comerciante');
-            $table->timestamps();
         });
     }
 

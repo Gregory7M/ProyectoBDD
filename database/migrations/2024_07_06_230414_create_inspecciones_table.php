@@ -13,7 +13,6 @@ class CreateInspeccionesTable extends Migration
             $table->date('Fecha');
             $table->foreignId('ID_Puesto')->constrained('puestos', 'ID_Puesto');
             $table->string('Resultado', 50);
-            $table->timestamps();
         });
     }
 

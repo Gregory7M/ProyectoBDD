@@ -12,7 +12,6 @@ class CreateInventariosTable extends Migration
             $table->foreignId('ID_Producto')->constrained('productos', 'ID_Producto');
             $table->integer('Cantidad');
             $table->date('Fecha_Registro');
-            $table->timestamps();
         });
     }
 

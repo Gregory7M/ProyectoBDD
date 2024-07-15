@@ -14,7 +14,6 @@ class CreateTareasMantenimientoTable extends Migration
             $table->date('Fecha_Programada');
             $table->date('Fecha_Realizacion')->nullable();
             $table->foreignId('ID_Mantenimiento')->constrained('mantenimiento', 'ID_Mantenimiento');
-            $table->timestamps();
         });
     }
 

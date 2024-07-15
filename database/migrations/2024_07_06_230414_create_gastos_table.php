@@ -14,7 +14,6 @@ class CreateGastosTable extends Migration
             $table->text('Descripción');
             $table->decimal('Monto', 10, 2);
             $table->string('Tipo', 50);
-            $table->timestamps();
         });
     }
 

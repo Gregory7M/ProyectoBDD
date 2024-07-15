@@ -14,7 +14,6 @@ class CreateAdminisTable extends Migration
             $table->string('apellido', 20);
             $table->string('correo', 50);
             $table->string('contraseña', 50);
-            $table->timestamps();
         });
     }
 

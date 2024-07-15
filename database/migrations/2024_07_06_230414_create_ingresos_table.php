@@ -13,7 +13,6 @@ class CreateIngresosTable extends Migration
             $table->text('Descripción');
             $table->decimal('Monto', 10, 2);
             $table->string('Fuente', 50);
-            $table->timestamps();
         });
     }
 
