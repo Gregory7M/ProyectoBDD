@@ -40,4 +40,5 @@ class PuestosTableSeeder extends Seeder
             'Precio_Alquiler' => 80.00
         ]);
     }
+    // Hola mundo
 }
